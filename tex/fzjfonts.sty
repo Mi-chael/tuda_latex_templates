@@ -1,0 +1,83 @@
+%% This is file `fzjfonts.sty' version 1.01 (2019/09/06),
+%% it is part of
+%% FZJ-CI -- Corporate Design for TU Darmstadt
+%% ----------------------------------------------------------------------------
+%%
+%%  Copyright (C) 2018--2019 by Marei Peischl <marei@peitex.de>
+%%
+%% ============================================================================
+%% This work may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%% http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2005/12/01 or later.
+%%
+%% This work has the LPPL maintenance status `maintained'.
+%%
+%% The Current Maintainers of this work are
+%%   Marei Peischl <fzj-ci@peitex.de>
+%%   Markus Lazanowski <latex@ce.tu-darmstadt.de>
+%%
+%% The development respository can be found at
+%% https://github.com/fzjce/fzj_latex_templates
+%% Please use the issue tracker for feedback!
+%%
+%% ============================================================================
+%%
+\def\fileversion{1.01}
+\def\filedate{2019/09/06}
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{fzjfonts}
+ [\filedate\space\fileversion\space 
+   font loading for FZJ-CI, TU Darmstadt's Corporate Design]
+   
+\RequirePackage{iftex}
+\RequirePackage{anyfontsize}
+
+\ifPDFTeX
+	%Declare Euro Symbol
+	\expandafter\ifx\csname DeclareUnicodeCharacter\endcsname\relax
+	\RequirePackage[utf8]{inputenc}
+	\fi
+	\RequirePackage{eurosym}
+	\DeclareUnicodeCharacter{20AC}{\euro}
+	\RequirePackage{XCharter}
+\else
+	\RequirePackage{fontspec}
+	\setmainfont{XCharter}
+\fi
+
+\RequirePackage{roboto}
+
+\IfFileExists{roboto-mono.sty}{
+	\RequirePackage{roboto-mono}
+}{
+	\PackageWarningNoLine{fzjfonts}{
+	The font package roboto-mono.sty could not be found. Probably your TeX-distribution is outdated.\MessageBreak
+	For correct font setup either install it manually or update you distribution}
+}
+
+\ifPDFTeX
+	\RequirePackage[T1]{fontenc}
+\fi
+
+\let\accentfont\robotoslab
+\DeclareTextFontCommand{\textaccent}{\accentfont}
+
+%adjust LaTeX kerning to font
+\DeclareRobustCommand{\LaTeX}{%
+{L\setbox\z@\hbox{\check@mathfonts \fontsize\sf@size\z@
+ \math@fontsfalse\selectfont A}\kern-.57\wd\z@
+ \sbox\tw@ T\vbox to \ht\tw@{\copy\z@ \vss}\kern-.2\wd\z@}%
+{%
+ \ifdim\fontdimen1\font=\z@ \else \count\z@=\fontdimen5\font
+ \multiply\count\z@ by 64\relax\divide\count\z@ by\p@
+ \count\tw@=\fontdimen1\font \multiply\count\tw@ by\count\z@
+ \divide\count\tw@ by 64\relax\divide\count\tw@ by\tw@
+ \kern-\the\count\tw@ sp\relax\fi}%
+\TeX}
+
+%%-----------------------------------------------------
+\endinput

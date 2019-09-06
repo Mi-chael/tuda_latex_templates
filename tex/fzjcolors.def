@@ -1,0 +1,84 @@
+%% This is file `fzjcolors.def' version 1.01 (2019/09/06),
+%% it is part of
+%% FZJ-CI -- Corporate Design for TU Darmstadt
+%% ----------------------------------------------------------------------------
+%%
+%%  Copyright (C) 2018--2019 by Marei Peischl <marei@peitex.de>
+%%
+%% ============================================================================
+%% This work may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%% http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2005/12/01 or later.
+%%
+%% This work has the LPPL maintenance status `maintained'.
+%%
+%% The Current Maintainers of this work are
+%%   Marei Peischl <fzj-ci@peitex.de>
+%%   Markus Lazanowski <latex@ce.tu-darmstadt.de>
+%%
+%% The development respository can be found at
+%% https://github.com/fzjce/fzj_latex_templates
+%% Please use the issue tracker for feedback!
+%%
+%% ============================================================================
+%%
+\def\fileversion{1.01}
+\def\filedate{2019/09/06}
+\ProvidesFile{fzjcolors.def}
+[\filedate\space\fileversion\space Color definitions for fzj-ci]
+
+\definecolor{FZJ-0d}{cmyk/RGB/HTML}{0,0,0,.8/83,83,83/535353}
+\definecolor{FZJ-0c}{cmyk/RGB/HTML}{0,0,0,.6/137,137,137/898989}
+\definecolor{FZJ-0b}{cmyk/RGB/HTML}{0,0,0,.4/181,181,181/B5B5B5}
+\definecolor{FZJ-0a}{cmyk/RGB/HTML}{0,0,0,.2/220,220,220/DCDCDC}
+
+\definecolor{FZJ-1a}{cmyk/RGB/HTML}{.7,.4,0,0/93,133,195/5D85C3}
+\definecolor{FZJ-2a}{cmyk/RGB/HTML}{0.8,.2,0,0/0,156,218/009CDA}
+\definecolor{FZJ-3a}{cmyk/RGB/HTML}{0.7,0,.5,0/80,182,149/50B695}
+\definecolor{FZJ-4a}{cmyk/RGB/HTML}{.4,0,.8,0/175,204,80/AFCC50}
+\definecolor{FZJ-5a}{cmyk/RGB/HTML}{.2,0,.8,0/221,223,72/DDDF48}
+\definecolor{FZJ-6a}{cmyk/RGB/HTML}{0,.1,.7,0/255,224,92/FFE05C}
+\definecolor{FZJ-7a}{cmyk/RGB/HTML}{0,.3,.8,0/248,186,60/F8BA3C}
+\definecolor{FZJ-8a}{cmyk/RGB/HTML}{0,.6,.8,0 /238,122,52/EE7A34}
+\definecolor{FZJ-9a}{cmyk/RGB/HTML}{0,.8,.7,0/233,80,62/E9503E}
+\definecolor{FZJ-10a}{cmyk/RGB/HTML}{.2,.9,0,0/201,48,142/C9308E}
+\definecolor{FZJ-11a}{cmyk/RGB/HTML}{.6,.8,0,0/128,69,151/804597}
+\definecolor{FZJ-1b}{cmyk/RGB/HTML}{1,.6,0,0/0,90,169/005AA9}
+\definecolor{FZJ-2b}{cmyk/RGB/HTML}{1,.3,0,0/0,131,204/0083CC}
+\definecolor{FZJ-3b}{cmyk/RGB/HTML}{1,0,.6,0/0,157,129/009D81}
+\definecolor{FZJ-4b}{cmyk/RGB/HTML}{.5,0,1,0/153,192,0/99C000}
+\definecolor{FZJ-5b}{cmyk/RGB/HTML}{.3,0,1,0/201,212,0/C9D400}
+\definecolor{FZJ-6b}{cmyk/RGB/HTML}{0,.2,1,0/253,202,0/FDCA00}
+\definecolor{FZJ-7b}{cmyk/RGB/HTML}{0,.4,1,0/245,163,0/F5A300}
+\definecolor{FZJ-8b}{cmyk/RGB/HTML}{0,.7,1,0/236,101,0/EC6500}
+\definecolor{FZJ-9b}{cmyk/RGB/HTML}{0,1,.9,0/230,0,26/E6001A}
+\definecolor{FZJ-10b}{cmyk/RGB/HTML}{.4,1,0,0/166,0,132/A60084}
+\definecolor{FZJ-11b}{cmyk/RGB/HTML}{.7,1,0,0/114,16,133/721085}
+\definecolor{FZJ-1c}{cmyk/RGB/HTML}{1,.7,.2,0/0,78,138/004E8A}
+\definecolor{FZJ-2c}{cmyk/RGB/HTML}{1,.5,.2,0/0,104,157/00689D}
+\definecolor{FZJ-3c}{cmyk/RGB/HTML}{1,.2,.6,0/0,136,119/008877}
+\definecolor{FZJ-4c}{cmyk/RGB/HTML}{.6,.1,1,0/127,171,22/7FAB16}
+\definecolor{FZJ-5c}{cmyk/RGB/HTML}{.4,.1,1,0/177,189,0/B1BD00}
+\definecolor{FZJ-6c}{cmyk/RGB/HTML}{.2,.3,1,0/215,172,0/D7AC00}
+\definecolor{FZJ-7c}{cmyk/RGB/HTML}{.2,.5,1,0/210,135,0/D28700}
+\definecolor{FZJ-8c}{cmyk/RGB/HTML}{.2,.8,1,0/204,76,3/CC4C03}
+\definecolor{FZJ-9c}{cmyk/RGB/HTML}{.3,1,.9,0/185,15,34/B90F22}
+\definecolor{FZJ-10c}{cmyk/RGB/HTML}{.5,1,.3,0/149,17,105/951169}
+\definecolor{FZJ-11c}{cmyk/RGB/HTML}{.8,1,.2,0/97,28,115/611C73}
+\definecolor{FZJ-1d}{cmyk/RGB/HTML}{1,.9,.3,0/36,53,114/243572}
+\definecolor{FZJ-2d}{cmyk/RGB/HTML}{1,.7,.4,0/0,78,115/004E73}
+\definecolor{FZJ-3d}{cmyk/RGB/HTML}{1,.4,.7,0/0,113,94/00715E}
+\definecolor{FZJ-4d}{cmyk/RGB/HTML}{.7,.3,1,0/106,139,55/6A8B22}
+\definecolor{FZJ-5d}{cmyk/RGB/HTML}{.5,.2,1,0/153,166,4/99A604}
+\definecolor{FZJ-6d}{cmyk/RGB/HTML}{.4,.4,1,0/174,142,0/AE8E00}
+\definecolor{FZJ-7d}{cmyk/RGB/HTML}{.3,.6,1,0/190,111,0/BE6F00}
+\definecolor{FZJ-8d}{cmyk/RGB/HTML}{.4,.8,1,0/169,73,19/A94913}
+\definecolor{FZJ-9d}{cmyk/RGB/HTML}{.5,1,.9,0/156,28,38/961C26}
+\definecolor{FZJ-10d}{cmyk/RGB/HTML}{.7,1,.5,0/115,32,84/732054}
+\definecolor{FZJ-11d}{cmyk/RGB/HTML}{.9,1,.3,0/76,34,106/4C226A}
+
+\endinput
